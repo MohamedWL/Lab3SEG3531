@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>L'épicerie de Mohamed</title>
+	<link rel="stylesheet" type="text/css" href="Layout.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+
+<header>L'épicerie de Mohamed</header>
+
+<div id="buttons">
+	<button type="button" id="choisiritem" onclick="movetosecondpage()">Faites votre liste d'épicerie</button>
+	<button type="button" id="panier">Votre Panier</button>
+	<button type="button" id="aide">Aide</button>
+	<button type="button" id="Accueil" onclick="movetohomepage()">Accueil</button>
+	
+</div>
+
+
+
+<script type="text/javascript">s 
+function getOption() { 
+    selectElement = document.querySelector('#category'); 
+    output = selectElement.options[selectElement.selectedIndex].value; 
+    document.querySelector('.output').textContent = output; 
+} 
+</script> 
+
+
+
+<form>
+	<div id="alimention">
+	<h1>Que préférez-vous?</h1>
+	
+	<select id="category">
+		<option value="Aucune Preference" selected="selected">Aucune Preference</option>
+		<option value="Sans Gluten">Sans Gluten</option>
+		<option value="Vegetarien">Vegetarien</option>
+	</select>
+	<input type="button" value="Confirmer"   onclick="getOption(); DltPain(); DltCer(); DltBoe();DltFil()">
+	<p> 
+        L'option selectionnée est:
+        <span id="span" class="output"></span> 
+    </p> 
+	</div>
+</form>
+<br><br>
+
+
+
+
+<form name="Panier" action="panier.html">
+    
+		<h1>Nous vous proposons ces articles basé selon vos préférences.</h1>
+        <legend>Ajoutez a votre panier</legend>
+		<p>Veuillez confirmer apres chaque quantite selectionnée</p>
+		<br><br>
+		<img src="tofu.jpg" alt="Tofu" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttTof">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+
+        <input type="button" id="CTofu" value="Confirmer Quantite"   onclick="setTofu()">
+		
+		<br><br>
+		
+		<img src="pain.jpg" id="pain" alt="Pain" style="width: 10%;">
+        <label id="lblppp">Quantité: </label>
+		<select id="qttPai">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+
+        <input type="button" id="CPain" value="Confirmer Quantite"   onclick="setPain()">
+        
+		
+		<br><br>
+		
+		<img src="cereale.jpg" id="cereal" alt="Cereales" style="width: 10%;">
+        <label id="lblCer">Quantité: </label>
+		<select id="qttCer">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+
+        <input type="button" id="CCereale" value="Confirmer Quantite"   onclick="setCereale()">
+        
+		
+		<br><br>
+		
+		<img src="kiwi.jpg" alt="Kiwi" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttKiw">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CKiwi" value="Confirmer Quantite"   onclick="setKiwi()">
+        
+		
+		<br><br>
+		
+		<img src="cajou.jpg" alt="Noix de Cajou" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttCaj">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CCajou" value="Confirmer Quantite"   onclick="setCajou()">
+        
+		
+		<br><br>
+		
+		<img src="laitue.jpg" alt="Laitue Batavia" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttLai">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CLaitue" value="Confirmer Quantite"   onclick="setLaitue()">
+        
+		
+		<br><br>
+		
+		<img src="moza.jpg" alt="Mozarella" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttMoz">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CMoza" value="Confirmer Quantite"   onclick="setMoza()">
+        
+		
+		<br><br>
+		
+		<img src="filet.jpg" id="imgFil" alt="Filet" style="width: 10%;">
+        <label id="lblFil">Quantité: </label>
+		<select id="qttFil">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CFilet" value="Confirmer Quantite"   onclick="setFilet()">
+        
+		
+		<br><br>
+		
+		<img src="boeuf.jpg" id="imgBoe" alt="Boeuf" style="width: 10%;">
+        <label id="lblBoe">Quantité: </label>
+		<select id="qttBoe">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CBoeuf" value="Confirmer Quantite"   onclick="setBoeuf()">
+        
+		
+		<br><br>
+		
+		<img src="orange.jpg" alt="Orange" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttOra">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="COrange" value="Confirmer Quantite"   onclick="setOrange()">
+        
+		
+		<br><br>
+		
+		<img src="huile.jpg" alt="Huile" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttHui">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CHuile" value="Confirmer Quantite"   onclick="setHuile()">
+        
+		
+		<br><br>
+		
+		<img src="carotte.jpg" alt="" style="width: 10%;">
+        <label>Quantité: </label>
+		<select id="qttCar">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="button" id="CCarotte" value="Confirmer Quantite"   onclick="setCarotte()">
+        
+		
+		<br><br><br><br>
+		
+		<input type="button" value="Confirmer votre commande" onclick="movetopanier()">
+</form>
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>L'épicerie de Mohamed</title>
+	<link rel="stylesheet" type="text/css" href="Layout.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+
+<header>L'épicerie de Mohamed</header>
+
+<div id="buttons">
+	<button type="button" id="choisiritem" onclick="movetosecondpage()">Faites votre liste d'épicerie</button>
+	<button type="button" id="panier">Votre Panier</button>
+	<button type="button" id="aide">Aide</button>
+	<button type="button" id="Accueil" onclick="movetohomepage()">Accueil</button>
+	
+</div>
+
+<br><br>
+<input type="button" id="CPain" value="Confirmer Quantite" onclick="fillRows()">
+<br><br>
+
+
+
+
+
+<table id="table" style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Nombre de portion</th> 
+    <th>Prix (en $)</th>
+  </tr>
+  <tr>
+    <td>Tofu</td>
+    <td><span id="tofu" class="output"></span></td>
+    <td><span id="prtofu" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Pain</td>
+    <td><span id="pain" class="output"></span></td>
+    <td><span id="prpain" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Cereales</td>
+    <td><span id="cereales" class="output"></span></td>
+    <td><span id="prcereales" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Kiwi</td>
+    <td><span id="kiwi" class="output"></span></td>
+    <td><span id="prkiwi" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Cajou</td>
+    <td><span id="cajou" class="output"></span></td>
+    <td><span id="prcajou" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Laitue</td>
+    <td><span id="laitue" class="output"></span></td>
+    <td><span id="prlaitue" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Mozarella</td>
+    <td><span id="moza" class="output"></span></td>
+    <td><span id="prmoza" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Filet</td>
+    <td><span id="filet" class="output"></span></td>
+    <td><span id="prfilet" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Boeuf</td>
+    <td><span id="boeuf" class="output"></span></td>
+    <td><span id="prboeuf" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Orange</td>
+    <td><span id="orange" class="output"></span></td>
+    <td><span id="prorange" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Huile</td>
+    <td><span id="huile" class="output"></span></td>
+    <td><span id="prhuile" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Carotte</td>
+    <td><span id="carotte" class="output"></span></td>
+    <td><span id="prcarotte" class="output"></span></td>
+  </tr>
+  <tr>
+    <td>Prix Total de la facture</td>
+    <td></td>
+    <td><span id="prtotal" class="output"></span></td>
+  </tr>
+</table>
+ 
+
+</body>
+
+</html>

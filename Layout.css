@@ -1,0 +1,119 @@
+header{
+  font-size: 40px;
+  font-family: Century Gothic;
+  text-align: center;
+  background: black;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Century Gothic;
+}
+
+legend {
+  font-size: 25px;
+  font-family: Century Gothic;
+}
+
+label {
+  font-size: 15px;
+  font-family: Century Gothic;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+#alimentation{
+  font-family: Century Gothic;
+  border: 2px solid black;  
+  border-radius: 20px
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-left: 80px;
+}
+
+#buttons{
+	border-style: solid;
+	border-width: 2px;
+	border-color: gainsboro;
+}
+button{
+	border: none;
+	color: black;
+	padding: 12px 20px;
+	text-align: center;
+	font-size: 16px;
+	font-family: Century Gothic;
+	background-color: white;
+	margin: 0px 90px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: red;
+	color: white;
+}
+
+#first{
+	width: 20%;
+}
+#second{
+	width: 20%;
+}
+
+#table{
+	visibility:hidden;
+}
+
+.container{
+	position: relative;
+	font-family: Arial;
+	
+}
+
+.txt{
+	position: absolute;
+	bottom: 20px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+
+
+/*Frome the keyframes to media screen, the CSS used has been taken from https://code.sololearn.com/WySlq83B2MC7/#css to make the looks of the site better*/
+@keyframes slideshow {
+	10% {left: 0;}
+	20% {left: 0;}
+	30% {left: -100%;}
+	40% {left: -100%;}
+	50% {left: -200%;}
+	60% {left: -200%;}
+	70% {left: -300%;}
+	80% {left: -300%;}
+	90% {left: -400%;}
+	100% {left: -400%}
+}
+
+
+#slideshow{overflow:hidden;width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slideshow figure img{width:20%;float:left;}
+#slideshow figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+
+@media screen and (max-width: 767px) {#slideshow {overflow: hidden; width: 100%; margin: 0 auto;}}
+
+/* End of the CSS taken from the website*/
